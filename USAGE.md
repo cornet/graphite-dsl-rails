@@ -45,3 +45,8 @@ Add the route:
 
     resources :graph do
     end
+
+### config/environment.rb
+Add the following
+
+    GraphiteTemplate::Config.graphite_url = 'http://<graphite address>/render'
