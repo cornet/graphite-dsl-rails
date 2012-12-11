@@ -13,7 +13,7 @@ to your Gemfile
 
 ### app/views/graph/cpu.erb
 
-    <%= render('cpu').html_safe %>
+   <img src="<%= render('cpu') %>">
 
 html_safe is needed or it escapes the image URL :(
 
