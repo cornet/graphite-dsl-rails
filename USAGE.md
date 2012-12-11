@@ -26,7 +26,7 @@ html_safe is needed or it escapes the image URL :(
     # individual fields
     field :iowait, :color => "#{info['color']}",
                    :alias => "#{info['alias']}",
-                   :data  => "*.phy0-sw1-ash.mpstat.cpu0.usr";
+                   :data  => "*.example.host.mpstat.cpu0.usr";
     
 ### app/controllers/graph_controller.rb
 
