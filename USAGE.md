@@ -13,10 +13,13 @@ to your Gemfile
 
 ### app/views/graph/cpu.erb
 
-    <img src="<%= render('cpu') %>">
+    <img src="<%= render('cpu').html_safe %>">
 
 html_safe is needed or it escapes the image URL :(
 
+You can also pass in local variables
+
+    render(:partial => 'webserver_load', :locals => { 'format' => 'json' }).html_safe
 
 ### app/views/graph/_cpu.graph
 
